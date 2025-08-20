@@ -4,9 +4,9 @@
 
 ## Welcome! 👋
 
-npm install 
-start localhost in vs code
-npm run watch:css
+- **Step 1** npm install.  
+- **Step 2** start localhost in vs code.  
+- **Step 3** npm run watch:css
 
 - **Step 1** installs all Node packages.  
 - **Step 2** runs your project locally.  
