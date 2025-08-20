@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+
+@layer utilities {
+  /* Neutral Colors */
+  .text-neutral-900 { color: hsl(227,75%,14%); }
+  .bg-neutral-900   { background-color: hsl(227,75%,14%,4%); }
+
+  .text-neutral-800 { color: hsl(226,25%,17%); }
+  .bg-neutral-800   { background-color: hsl(226,25%,17%); }
+
+  .text-neutral-700 { color: hsl(225,23%,24%); }
+  .bg-neutral-700   { background-color: hsl(225,23%,24%); }
+
+  .text-neutral-600 { color: hsl(226,11%,37%); }
+  .bg-neutral-600   { background-color: hsl(226,11%,37%); }
+
+  .text-neutral-300 { color: hsl(0,0%,78%); }
+  .bg-neutral-300   { background-color: hsl(0,0%,78%); }
+
+  .text-neutral-200 { color: hsl(217,61%,90%); }
+  .bg-neutral-200   { background-color: hsl(217,61%,90%); }
+
+  .text-neutral-100 { color: hsl(0,0%,93%); }
+  .bg-neutral-100   { background-color: hsl(0,0%,93%); }
+
+  .text-neutral-0 { color: hsl(200,60%,99%); }
+  .bg-neutral-0   { background-color: hsl(200,60%,99%); }
+
+  /* Red Colors */
+  .text-red-400 { color: hsl(3,86%,64%); }
+  .bg-red-400   { background-color: hsl(3,86%,64%); }
+
+  .text-red-500 { color: hsl(3,71%,56%); }
+  .bg-red-500   { background-color: hsl(3,71%,56%); }
+
+  .text-red-700 { color: hsl(3,77%,44%); }
+  .bg-red-700   { background-color: hsl(3,77%,44%); }
+
+  /* Gradients */
+  .bg-light-gradient {
+    background-image: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+  }
+
+  .bg-dark-gradient {
+    background-image: linear-gradient(180deg, #040918 0%, #091540 100%);
+  }
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: url("./assets/fonts/static/NotoSans-Regular.ttf") format("truetype");
+}
