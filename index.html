@@ -12,28 +12,28 @@
 </head>
 <body class="bg-[linear-gradient(180deg,#EBF2FC_0%,#EEF8F9_100%)] dark:bg-[linear-gradient(180deg,#040918_0%,#091540_100%)] font-noto">
   <main class="p-6">
-    <nav class="bg-[hsl(200,60%,99%)] dark:bg-[hsl(226,25%,17%)] max-w-4xl mx-auto flex justify-between p-5 items-center rounded-3xl shadow-md lg:max-w-none lg:w-[90%]">
+    <nav class="bg-[hsl(200,60%,99%)] dark:bg-[hsl(226,25%,17%)] max-w-4xl mx-auto flex justify-between p-3 items-center rounded-2xl shadow-md lg:max-w-none lg:w-[90%]">
       <img id="dark-nav" class="hidden" src="./assets/images/dark-mode.svg" alt="image">
       <img id="light-nav" class="text-[hsl(200,60%,99%)]" src="./assets/images/logo.svg" alt="image">
       <div class="toggle-mode flex gap-2">
-        <img id="dark-icon" class="bg-neutral-100 p-6 rounded-3xl cursor-pointer" src="./assets/images/icon-moon.svg" alt="dark mode">
-        <img id="light-icon" class="hidden bg-neutral-700 p-6 rounded-3xl cursor-pointer" src="./assets/images/icon-sun.svg" alt="light mode">
+        <img id="dark-icon" class="bg-neutral-100 p-3 rounded-2xl cursor-pointer" src="./assets/images/icon-moon.svg" alt="dark mode">
+        <img id="light-icon" class="hidden bg-neutral-700 p-3 rounded-2xl cursor-pointer" src="./assets/images/icon-sun.svg" alt="light mode">
       </div>
     </nav>
 
-    <section class="p-6 flex flex-col items-center my-10 lg:w-[90%] lg:flex-row justify-between mx-auto">
-      <h1 class="dark:text-[hsl(200,60%,99%)] font-noto text-5xl font-bold text-[hsl(227,75%,14%)] lg:text-7xl">Extensions List</h1>
-        <div class=" flex p-10 gap-7 lg:justify-end">
-          <p id="all" class="bg-[hsl(200,60%,99%)] hover:bg-[hsl(3,71%,56%)] hover:text-[hsl(200,60%,99%)] font-normal border border-[1px] border-[hsl(0,0%,78%)] text-3xl p-10 rounded-full w-30 h-12 flex justify-center items-center cursor-pointer dark:bg-[hsl(226,25%,17%)] dark:text-[hsl(200,60%,99%)] dark:hover:bg-[hsl(3,77%,44%)] dark:hover:text-[hsl(227,75%,14%)]">All</p>
-          <p id="active" class="bg-[hsl(200,60%,99%)] hover:bg-[hsl(3,71%,56%)] hover:text-[hsl(200,60%,99%)] font-normal border border-[1px] border-[hsl(0,0%,78%)] text-3xl p-10 rounded-full w-35 h-12 flex justify-center items-center cursor-pointer dark:bg-[hsl(226,25%,17%)] dark:text-[hsl(200,60%,99%)] dark:hover:bg-[hsl(3,77%,44%)] dark:hover:text-[hsl(227,75%,14%)]">Active</p>
-          <p id="inactive" class="bg-[hsl(200,60%,99%)] hover:bg-[hsl(3,71%,56%)] hover:text-[hsl(200,60%,99%)] font-normal border border-[1px] border-[hsl(0,0%,78%)] text-3xl p-10 rounded-full w-40 h-12 flex justify-center items-center cursor-pointer dark:bg-[hsl(226,25%,17%)] dark:text-[hsl(200,60%,99%)] dark:hover:bg-[hsl(3,77%,44%)] dark:hover:text-[hsl(227,75%,14%)]">Inactive</p>
+    <section class="p-4 flex flex-col items-center my-6 lg:w-[90%] lg:flex-row justify-between mx-auto">
+      <h1 class="dark:text-[hsl(200,60%,99%)] font-noto text-2xl font-bold text-[hsl(227,75%,14%)] lg:text-4xl">Extensions List</h1>
+        <div class=" flex p-4 gap-3 lg:justify-end">
+          <p id="all" class="bg-[hsl(200,60%,99%)] hover:bg-[hsl(3,71%,56%)] hover:text-[hsl(200,60%,99%)] font-normal border border-[1px] border-[hsl(0,0%,78%)] text-sm px-4 py-2 rounded-full min-w-[60px] h-10 flex justify-center items-center cursor-pointer dark:bg-[hsl(226,25%,17%)] dark:text-[hsl(200,60%,99%)] dark:hover:bg-[hsl(3,77%,44%)] dark:hover:text-[hsl(227,75%,14%)]">All</p>
+          <p id="active" class="bg-[hsl(200,60%,99%)] hover:bg-[hsl(3,71%,56%)] hover:text-[hsl(200,60%,99%)] font-normal border border-[1px] border-[hsl(0,0%,78%)] text-sm px-4 py-2 rounded-full min-w-[70px] h-10 flex justify-center items-center cursor-pointer dark:bg-[hsl(226,25%,17%)] dark:text-[hsl(200,60%,99%)] dark:hover:bg-[hsl(3,77%,44%)] dark:hover:text-[hsl(227,75%,14%)]">Active</p>
+          <p id="inactive" class="bg-[hsl(200,60%,99%)] hover:bg-[hsl(3,71%,56%)] hover:text-[hsl(200,60%,99%)] font-normal border border-[1px] border-[hsl(0,0%,78%)] text-sm px-4 py-2 rounded-full min-w-[80px] h-10 flex justify-center items-center cursor-pointer dark:bg-[hsl(226,25%,17%)] dark:text-[hsl(200,60%,99%)] dark:hover:bg-[hsl(3,77%,44%)] dark:hover:text-[hsl(227,75%,14%)]">Inactive</p>
         </div>
     </section>
 
     <!-- Extensions List -->
-    <section class="lg:w-[90%] mx-auto grid gap-6 p-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3" id="tools-container"></section>
+    <section class="lg:w-[90%] mx-auto grid gap-4 p-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3" id="tools-container"></section>
 
-    <div class="p-6 flex justify-center text-[15px] text-[hsl(227,75%,14%)] dark:text-[hsl(200,60%,99%)]">
+    <div class="p-4 flex justify-center text-sm text-[hsl(227,75%,14%)] dark:text-[hsl(200,60%,99%)]">
     <p> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" class="text-black hover:text-red-500 transition-colors duration-200 dark:text-[hsl(3,77%,44%)]"> Frontend Mentor</a> Coded by 
     <a href="#" class="text-black hover:text-red-500 transition-colors duration-200 dark:text-[hsl(3,77%,44%)]"> Favskid</a>
   </p>

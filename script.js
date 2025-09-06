@@ -52,7 +52,7 @@ function renderList() {
     if (!shouldShow(tool)) return;
 
     const section = document.createElement('section');
-    section.className = "bg-[hsl(200,60%,99%)] dark:bg-[hsl(226,25%,17%)] rounded-3xl px-8 border border-[1px] border-[hsl(0,0%,78%)] dark:border-[hsl(226,11%,37%)] ";
+    section.className = "bg-[hsl(200,60%,99%)] dark:bg-[hsl(226,25%,17%)] rounded-2xl px-4 py-4 border border-[1px] border-[hsl(0,0%,78%)] dark:border-[hsl(226,11%,37%)] ";
 
     // Initial toggle state
     const iconOnClass = tool.isActive ? "" : "hidden";
@@ -61,18 +61,18 @@ function renderList() {
     section.innerHTML = `
       <div class="flex flex-row items-center">
         <img src="${tool.logo}">
-        <div class="ml-5">
-          <h1 class="text-[20px] dark:text-[hsl(200,60%,99%)] py-6 pb-1 font-bold ">${tool.name}</h1>
-          <p class="text-[17px] dark:text-[hsl(0,0%,78%)] font-light">${tool.description}</p>
+        <div class="ml-3">
+          <h1 class="text-base dark:text-[hsl(200,60%,99%)] py-3 pb-1 font-bold ">${tool.name}</h1>
+          <p class="text-sm dark:text-[hsl(0,0%,78%)] font-light">${tool.description}</p>
         </div>
       </div>
-      <div class="flex flex-row justify-between py-8">
-        <p class="bg-[hsl(200,60%,99%)] font-normal border border-[1px] border-[hsl(0,0%,78%)] hover:bg-[hsl(217,61%,90%)] text-3xl p-10 rounded-full w-40 h-4 flex justify-center items-center cursor-pointer dark:bg-[hsl(226,25%,17%)] dark:text-[hsl(200,60%,99%)] dark:hover:bg-[hsl(3,77%,44%)] dark:hover:text-[hsl(227,75%,14%)] remove-btn" data-index="${index}">Remove</p>
+      <div class="flex flex-row justify-between py-4">
+        <p class="bg-[hsl(200,60%,99%)] font-normal border border-[1px] border-[hsl(0,0%,78%)] hover:bg-[hsl(217,61%,90%)] text-sm px-4 py-2 rounded-full min-w-[80px] h-8 flex justify-center items-center cursor-pointer dark:bg-[hsl(226,25%,17%)] dark:text-[hsl(200,60%,99%)] dark:hover:bg-[hsl(3,77%,44%)] dark:hover:text-[hsl(227,75%,14%)] remove-btn" data-index="${index}">Remove</p>
         <button class="toggle-btn cursor-pointer" data-index="${index}">
-          <svg class="icon-on ${iconOnClass}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" fill="red" width="40px" height="40px">
+          <svg class="icon-on ${iconOnClass}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" fill="red" width="32px" height="32px">
             <path d="M224 128C118 128 32 214 32 320C32 426 118 512 224 512L416 512C522 512 608 426 608 320C608 214 522 128 416 128L224 128zM416 224C469 224 512 267 512 320C512 373 469 416 416 416C363 416 320 373 320 320C320 267 363 224 416 224z"/>
           </svg>
-          <svg class="icon-off ${iconOffClass}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" fill="hsl(217,61%,90%)"height="40px" width="40px">
+          <svg class="icon-off ${iconOffClass}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" fill="hsl(217,61%,90%)" height="32px" width="32px">
             <path d="M416 192C486.7 192 544 249.3 544 320C544 390.7 486.7 448 416 448L224 448C153.3 448 96 390.7 96 320C96 249.3 153.3 192 224 192L416 192zM608 320C608 214 522 128 416 128L224 128C118 128 32 214 32 320C32 426 118 512 224 512L416 512C522 512 608 426 608 320zM224 400C268.2 400 304 364.2 304 320C304 275.8 268.2 240 224 240C179.8 240 144 275.8 144 320C144 364.2 179.8 400 224 400z"/>
           </svg>
         </button>
